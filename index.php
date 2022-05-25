@@ -115,9 +115,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 // TODO: загрузить данные пользователя из БД
 // и заполнить переменную $values,
 // предварительно санитизовав.
-  $user = 'u24224';
-  $password = '1546096';
-  $db = new PDO('mysql:host=localhost;dbname=u24224', $user, $password, array(PDO::ATTR_PERSISTENT => true));
+  $user = 'u47525';
+  $password = '1167408';
+  $db = new PDO('mysql:host=localhost;dbname=u47525', $user, $password, array(PDO::ATTR_PERSISTENT => true));
   $uid = $_SESSION['uid'];
   $res= $db->query("SELECT fio, email, year, pol, limb, biography FROM application WHERE id = $uid");
   foreach($res as $el){
@@ -243,9 +243,9 @@ else {
     // TODO: тут необходимо удалить остальные Cookies.
   }
 
-  $user = 'u24224';
-  $password = '1546096';
-  $db = new PDO('mysql:host=localhost;dbname=u24224', $user, $password, array(PDO::ATTR_PERSISTENT => true));
+  $user = 'u47525';
+  $password = '1167408';
+  $db = new PDO('mysql:host=localhost;dbname=u47525', $user, $password, array(PDO::ATTR_PERSISTENT => true));
 
 // Проверяем меняются ли ранее сохраненные данные или отправляются новые.
     if (!empty($_COOKIE[session_name()]) &&
