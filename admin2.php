@@ -26,9 +26,9 @@ if (empty($_SERVER['PHP_AUTH_USER']) || empty($_SERVER['PHP_AUTH_PW'])) {
 $usLogin = $_SERVER['PHP_AUTH_USER'];
 $usHash = md5($_SERVER['PHP_AUTH_PW']);
 
-$user = 'u24224';
-$password = '1546096';
-$db = new PDO('mysql:host=localhost;dbname=u24224', $user, $password, array(PDO::ATTR_PERSISTENT => true));
+$user = 'u475254';
+$password = '1167408';
+$db = new PDO('mysql:host=localhost;dbname=u47525', $user, $password, array(PDO::ATTR_PERSISTENT => true));
 
 $data = $db->query("SELECT * FROM adm WHERE login ='$usLogin' and hash ='$usHash'");
 $result = $data->fetchALL(PDO::FETCH_ASSOC);
@@ -48,9 +48,9 @@ print('Вы успешно авторизовались.');
 // Здесь нужно прочитать отправленные ранее пользователями данные и вывести в таблицу.
 // Реализовать просмотр и удаление всех данных.
 // *********
-$user = 'u24224';
-$password = '1546096';
-$db = new PDO('mysql:host=localhost;dbname=u24224', $user, $password, array(PDO::ATTR_PERSISTENT => true));
+$user = 'u47525';
+$password = '1167408';
+$db = new PDO('mysql:host=localhost;dbname=u47525', $user, $password, array(PDO::ATTR_PERSISTENT => true));
 
 $data = $db->query("SELECT * FROM application");
 $result = $data->fetchALL(PDO::FETCH_ASSOC);
