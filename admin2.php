@@ -26,7 +26,7 @@ if (empty($_SERVER['PHP_AUTH_USER']) || empty($_SERVER['PHP_AUTH_PW'])) {
 $usLogin = $_SERVER['PHP_AUTH_USER'];
 $usHash = md5($_SERVER['PHP_AUTH_PW']);
 
-$user = 'u475254';
+$user = 'u47525';
 $password = '1167408';
 $db = new PDO('mysql:host=localhost;dbname=u47525', $user, $password, array(PDO::ATTR_PERSISTENT => true));
 
