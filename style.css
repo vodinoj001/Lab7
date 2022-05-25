@@ -3,18 +3,18 @@
 	font-size: 20px;
   }
   body{
-	  background-color: #8F8A91;
+	  background-color: #fffde0;
   }
   
   #main-aside-wrapper {
-	  background-color: #8F8A91;
+	  background-color: #fffde0;
 	}
 	
 	
 	#cont {
 		padding: 15px;
 		text-align: center;
-	  background-color: #FFEFFD;
+	  background-color: #b5b5b5;
 	  width: 60rem;
 	}
 	
@@ -25,6 +25,6 @@
 	}
 	
 	footer{
-		background-color: #8F8A91;
+		background-color: #fffde0;
 		height: 20px;
 	}
